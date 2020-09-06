@@ -4,17 +4,16 @@ const booksRouter = new Router({
     prefix: '/books'
 });
 
-const bookList = [
-    {
-        name: 'Senhor dos anéis',
-        name: 'O milagre da manhã',
-        name: '10% mais feliz',
-    }
+let books = [
+    { id: 101, name: 'Fight Club', author: 'Chuck Palahniuk' },
+    { id: 102, name: 'Sharp Objects', author: 'Gillian Flynn' },
+    { id: 103, name: 'Frankenstein', author: 'Mary Shelley' },
+    { id: 101, name: 'Into The Wild', author: 'John Krakauer' }
 ];
 
 booksRouter.get('/', (ctx, next) => {
-    ctx.body = bookList;
-    next();
+    ctx.body = books;
+    next()
 });
 
 module.exports = booksRouter
