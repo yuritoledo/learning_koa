@@ -17,6 +17,7 @@
     "dev": "nodemon index.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate save --experimental && prisma migrate up --experimental",
-    "seed": "node ./seeds/user"
+    "seed": "node ./seeds/user",
+    "start": "node index.js"
   }
 }
