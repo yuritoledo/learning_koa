@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.4.0"
+  },
+  "name": "learning_koa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yuri Toledo <yuriwtoledo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
