@@ -9,7 +9,9 @@ async function getUsers() {
 
 
 export default async (req, res) => {
+  console.log('object')
   const users = await getUsers()
+  console.log(users)
   res.status(200).json({
     users,
   })
